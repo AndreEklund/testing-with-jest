@@ -1,4 +1,6 @@
 # testing-with-jest
+
 A Jest + nom lab session
 
 Some additional information...
+Here is some more text...
