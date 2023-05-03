@@ -17,3 +17,17 @@ test("peek on stack with two or more elements returns the top element", () => {
   expect(stack.peek()).toBeDefined();
   expect(stack.peek()).toBe(42);
 });
+// Additional test that will fail.
+test("pushing five elements and popping five times should make the stack empty", () => {
+  stack.push(5);
+  stack.push(8);
+  stack.push(22);
+  stack.push(34);
+  stack.push(1);
+  stack.pop();
+  stack.pop();
+  stack.pop();
+  stack.pop();
+  stack.pop();
+  expect(stack.peek()).toBeUndefined();
+});
