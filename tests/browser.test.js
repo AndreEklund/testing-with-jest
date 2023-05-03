@@ -34,14 +34,14 @@ describe('Clicking "Pusha till stacken"', () => {
   });
 });
 
-// Additional test that will fail
+// Additional test
 describe('Clicking "Poppa stacken!"', () => {
-  it("should return last Bananer", async () => {
+  it("should return Bananer", async () => {
     let pop = await driver.findElement(By.id("pop"));
     await pop.click();
     let alert = await driver.switchTo().alert();
     await alert.accept();
     let stack = await driver.findElement(By.id("top_of_stack")).getText();
-    expect(stack).toEqual("typo");
+    expect(stack).toEqual("Bananer");
   });
 });
